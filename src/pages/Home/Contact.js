@@ -15,7 +15,7 @@ function Contact() {
         "service_8t1tfnh", // from EmailJS
         "template_n8gotgd", // from EmailJS
         form.current,
-        "pxLXNhSklSIRBHTem"   // from EmailJS
+        "pxLXNhSklSIRBHTem" // from EmailJS
       )
       .then(
         () => {
@@ -34,9 +34,13 @@ function Contact() {
       {/* Title */}
       <SectionTitle title="Contact Us" />
 
-      <div className="flex sm:flex-col items-center justify-between mt-8 rounded-xl shadow-xl p-6 bg-tertiary/10">
+      <div className="flex sm:flex-col md:flex-row items-center justify-between mt-8 rounded-xl shadow-xl p-6 bg-tertiary/10 gap-6">
         {/* Left: Contact Form */}
-        <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4 w-[350px]">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="flex flex-col gap-4 w-full sm:w-full md:w-[350px]"
+        >
           {/* Name Input */}
           <div className="flex items-center bg-tertiary/20 rounded-lg px-3 py-2 shadow-sm">
             <i className="ri-user-line text-tertiary mr-2"></i>
@@ -45,7 +49,7 @@ function Contact() {
               name="from_name"
               placeholder="Name"
               required
-              className="bg-transparent w-full outline-none text-tertiary"
+              className="bg-transparent w-full outline-none text-tertiary text-sm sm:text-base"
             />
           </div>
 
@@ -57,7 +61,7 @@ function Contact() {
               name="email_id"
               placeholder="Email"
               required
-              className="bg-transparent w-full outline-none text-tertiary"
+              className="bg-transparent w-full outline-none text-tertiary text-sm sm:text-base"
             />
           </div>
 
@@ -69,14 +73,14 @@ function Contact() {
               placeholder="Message"
               rows="3"
               required
-              className="bg-transparent w-full outline-none resize-none text-tertiary"
+              className="bg-transparent w-full outline-none resize-none text-tertiary text-sm sm:text-base"
             ></textarea>
           </div>
 
           {/* Button */}
           <button
             type="submit"
-            className="flex items-center justify-center gap-2 bg-primary text-white font-semibold py-2 rounded-lg shadow-md hover:bg-secondary hover:opacity-90 transition-all"
+            className="flex items-center justify-center gap-2 bg-primary text-white font-semibold py-2 rounded-lg shadow-md hover:bg-secondary hover:opacity-90 transition-all text-sm sm:text-base"
           >
             Send Message
           </button>
@@ -86,12 +90,13 @@ function Contact() {
         </form>
 
         {/* Right: Illustration */}
-        <div className="h-[400px] flex justify-center items-center">
+        <div className="h-[300px] sm:h-[250px] md:h-[400px] w-full flex justify-center items-center">
           <dotlottie-player
             src="https://lottie.host/f0d0927d-7dda-4ab4-ae77-bc9a16ecf664/QYvnwiShXy.json"
             background="transparent"
             speed="1"
             autoplay
+            className="w-[220px] sm:w-[280px] md:w-[400px] h-auto"
           ></dotlottie-player>
         </div>
       </div>

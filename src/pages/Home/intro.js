@@ -10,7 +10,8 @@ function Intro() {
       </h1>
 
       <h1 className="text-6xl  sm:text-3xl text-white font-semibold">
-        I am learning about Software Engineering.
+        {/* I am learning about Software Engineering. */}
+        Software Engineer
       </h1>
       <p className="text-white w-2/3">
         Passionate about software engineering and Full Stack Development,I love

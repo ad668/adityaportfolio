@@ -34,8 +34,8 @@ function About() {
         <div className="flex flex-col gap-5 w-1/2 sm:w-full">
           <p className="text-white">
             Hello! I'm Aditya Maurya, a passionate creator of web-based projects
-            and an aspiring software engineer. I am currently completing my
-            Graduate Training at TCS. During this training period, I have worked
+            and working as Software Engineer in TCS. I have already completed my
+            Graduate Training in TCS. During this training period, I have worked
             with various technologies, including Python, AI & ML, Docker, Git,
             Java, HTML, CSS, JavaScript, React.js, Django, Node.js, MySQL, and
             MongoDB, Data Structure and algorithm (DSA), Object Oriented
